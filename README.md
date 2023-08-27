@@ -3,6 +3,8 @@
 Welcome to the Learning Python repository! 🚀 This repository is your playground for learning and practicing Python programming through a collection of scripts that cover a wide range of topics.
 
 
+![Gameplay Demo](https://www.papasiddhi.com/wp-content/uploads/2022/02/python-1110x550.jpg) 
+
 
 ## Table of Contents
 
