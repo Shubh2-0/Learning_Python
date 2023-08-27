@@ -18,11 +18,9 @@ def print_number_pattern(rows):
             print(j, end=" ")
         print()
 
+
 rows = 5
 print_number_pattern(rows)
-
-
-
 
 
 # ### Problem **2: Display numbers from a list using loop**
@@ -55,10 +53,9 @@ def display_numbers(numbers):
         else:
             break
 
+
 numbers = [12, 75, 150, 180, 145, 525, 50]
 display_numbers(numbers)
-
-
 
 
 # ### Problem **3: Append new string in the middle of a given string**
@@ -90,7 +87,6 @@ result = append_middle(s1, s2)
 print(result)
 
 
-
 # ### Problem **4: Arrange string characters such that lowercase letters should come first**
 
 # Given string contains a combination of the lower and upper case letters. Write a program to arrange the characters of a string so that all lowercase letters should come first.
@@ -109,6 +105,7 @@ print(result)
 
 def arrange_lowercase_first(input_str):
     return ''.join(sorted(input_str, key=lambda x: (x.isupper(), x)))
+
 
 str1 = "PyNaTive"
 result = arrange_lowercase_first(str1)
@@ -135,6 +132,7 @@ print(result)
 def concatenate_lists_indexwise(list1, list2):
     return [x + y for x, y in zip(list1, list2)]
 
+
 list1 = ["M", "na", "i", "Ke"]
 list2 = ["y", "me", "s", "lly"]
 result = concatenate_lists_indexwise(list1, list2)
@@ -153,6 +151,13 @@ print(result)
 # ```
 # ['Hello Dear', 'Hello Sir', 'take Dear', 'take Sir']
 # ```
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+
+result = [x + y for x in list1 for y in list2]
+
+print(result)
+
 
 # ### Problem **7: Iterate both lists simultaneously**
 
@@ -174,6 +179,16 @@ print(result)
 # 40 100
 # ```
 
+l = [10, 20, 30, 40]
+l2 = [100, 200, 300, 400]
+
+zipl = zip(l, l2[::-1])
+
+
+for num, num2 in zipl:
+    print(num, num2)
+
+
 # ### Problem **8: Initialize dictionary with default values**
 
 # In Python, we can initialize the keys with the same values.
@@ -190,6 +205,12 @@ print(result)
 # ```
 # {'Kelly': {'designation': 'Developer', 'salary': 8000}, 'Emma': {'designation': 'Developer', 'salary': 8000}}
 # ```
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+details = {employee: defaults.copy() for employee in employees}
+
+print(details)
+
 
 # ### Problem **9: Create a dictionary by extracting the keys from a given dictionary**
 
@@ -214,6 +235,23 @@ print(result)
 # {'name': 'Kelly', 'salary': 8000}
 # ```
 
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"}
+
+# Keys to extract
+keys = ["name", "salary"]
+
+ans = {"name": sample_dict.get("name"),
+           "salery" : sample_dict.get("salary")
+          }
+
+print(ans)
+
+
+
 # ### Problem **10: Modify the tuple**
 
 # Given a nested tuple. Write a program to modify the first item (22) of a list inside the following tuple to 222
@@ -225,3 +263,12 @@ print(result)
 # ```
 
 # **Expected output:**
+
+# tuple1: (11, [222, 33], 44, 55)
+
+
+tuple1 = (11, [22, 33], 44, 55)
+
+tuple1[1][0]=222
+
+print(tuple1)
