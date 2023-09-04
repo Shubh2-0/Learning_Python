@@ -18,7 +18,7 @@ Welcome to the Learning Python repository! 🚀 This repository is your playgrou
   - [Conditional Statements](#conditional-statements)
   - ... (and so on for all the scripts)
 - [Contributing](#contributing)
-
+  
 ## Introduction 🌟
 
 Are you new to Python programming? Or are you a Pythonista looking to sharpen your skills? You're in for a treat! 🎉 This repository is all about hands-on learning, featuring a collection of scripts that focus on specific Python concepts. Whether you're just starting out or you're a seasoned coder, these scripts will help you grasp essential Python topics.
